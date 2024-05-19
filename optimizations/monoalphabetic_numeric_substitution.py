@@ -5,6 +5,7 @@ Email-1: chukwunazaekpere.obioma@ue-germany.de
 Email-2: ceo.naza.tech@gmail.com
 ************************************************************
 Course: Software Optimisation
+Written: May 12th 2024
 Due: May 20th 2024
 instructions: 
 """
