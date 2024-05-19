@@ -12,23 +12,10 @@ This file is where we put the alphabets, in which our plain-message is
 written i.e whether mother-tongue or the english alphabet
 """
 class SubKeysGenerator:
+    """Generates a 48-bit key from a given hexadecimal key"""
     def __init__(self, key: int) -> None:
         self.key = key
         self.shift_schedule = [1, 2, 1, 2, 1, 1, 2, 1, 1, 1, 1, 2, 2, 2, 1]
-        
-
-    def _file_opener(self, file, mode: str, char_to_write=""):
-        """Read file containing message to be encrypted or decrypted"""
-        if mode == "r":
-            with open(file=file, mode="r")as file_data:
-                file_content = file_data.read()
-            return file_content
-        elif mode == "w":
-            with open(file, "w")as message_file:
-                message_file.write("")
-        else:
-            with open(file, "+a")as encrypt_message_file:
-                encrypt_message_file.write(char_to_write)
 
     def _convert_hex_key_to_binary(self):
         """Convert hexa-decimal key to binary key"""
