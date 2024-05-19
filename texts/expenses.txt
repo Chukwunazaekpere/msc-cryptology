@@ -1,0 +1,7 @@
+library = 100
+transport = 500
+feeding = 300
+electricity = 200
+gas = 100
+water = 150
+	 Total expenses: 1350
